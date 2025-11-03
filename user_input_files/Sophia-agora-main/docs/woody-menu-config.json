@@ -1,0 +1,384 @@
+{
+  "restaurantInfo": {
+    "id": "woody-andover",
+    "name": "Woody's Burger, Chicken & Ribs",
+    "location": "37 London Street, Andover, SP10 2NU, UK",
+    "phone": "01264 352222",
+    "timezone": "Europe/London",
+    "hours": {
+      "monday": { "open": "11:00", "close": "23:00" },
+      "tuesday": { "open": "11:00", "close": "23:00" },
+      "wednesday": { "open": "11:00", "close": "23:00" },
+      "thursday": { "open": "11:00", "close": "23:00" },
+      "friday": { "open": "11:00", "close": "04:00" },
+      "saturday": { "open": "11:00", "close": "04:00" },
+      "sunday": { "open": "12:00", "close": "22:00" }
+    }
+  },
+  "branding": {
+    "primaryColor": "#C41E3A",
+    "secondaryColor": "#6B7280",
+    "accentColor": "#10B981",
+    "logoUrl": "https://www.woodysandover.co.uk/logo.png",
+    "widgetPosition": "bottom-right",
+    "chatBubbleText": "Order with Sophia",
+    "headerBackground": "#C41E3A",
+    "headerText": "#FFFFFF",
+    "buttonColor": "#C41E3A",
+    "buttonText": "#FFFFFF"
+  },
+  "prompts": {
+    "systemPrompt": "You are Sophia, a friendly and enthusiastic AI ordering assistant for Woody's Burger, Chicken & Ribs in Andover. Your job is to help customers browse our menu, answer questions about our food, and help them place orders. You have access to our complete menu. Always be helpful, warm, and encourage customers to enjoy our delicious flame-grilled burgers, crispy fried chicken, and tender ribs. If customers ask about allergies or dietary restrictions, take them very seriously and help them find safe options. Never suggest items not on our menu. If asked about something off-menu, politely redirect them to what we do offer.",
+    "welcomeMessage": "👋 Hey there! I'm Sophia, your ordering assistant at Woody's Burger, Chicken & Ribs. We've got amazing flame-grilled burgers, crispy fried chicken, tender ribs, and so much more! What can I help you with today? Want to hear about our menu, or ready to order? 🍔🍗",
+    "allergyQuestion": "Before we get started, do you have any allergies I should know about? (e.g., gluten, dairy, nuts, soy, shellfish)",
+    "blockedItemMessage": "I'm sorry, that item contains ingredients you're allergic to. Let me suggest some safe alternatives for you!",
+    "cartPrompt": "Great! I've added that to your order. Anything else you'd like to add?",
+    "checkoutPrompt": "Perfect! Here's your order summary. Ready to proceed to checkout?"
+  },
+  "categories": [
+    {
+      "id": "burgers",
+      "name": "🍔 Burgers",
+      "description": "Fresh flame-grilled beef burgers",
+      "items": [
+        {
+          "id": "burger-cluffie",
+          "name": "Cluffie Burger",
+          "description": "Plain & simple. Just delicious beef.",
+          "price": 5.95,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "burger-daytona",
+          "name": "Daytona Burger",
+          "description": "Lettuce, tomato & mayonnaise",
+          "price": 6.95,
+          "allergens": ["gluten", "eggs"],
+          "dietary": ["vegetarian-capable"],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "burger-cheese",
+          "name": "Cheese Burger",
+          "description": "Melted cheddar",
+          "price": 6.45,
+          "allergens": ["gluten", "dairy"],
+          "dietary": [],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "burger-hot-stuff",
+          "name": "Hot Stuff Burger",
+          "description": "Eye-watering chilli sauce. For the brave!",
+          "price": 6.45,
+          "allergens": ["gluten", "soy"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "burger-kontiki",
+          "name": "Kon-Tiki Burger",
+          "description": "Pineapple & lettuce. Sweet & savory!",
+          "price": 6.45,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "burger-rocky",
+          "name": "Rocky Burger",
+          "description": "Fresh onion & pepper",
+          "price": 6.45,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "burger-ardmore",
+          "name": "Ardmore Burger",
+          "description": "BBQ sauce",
+          "price": 6.45,
+          "allergens": ["gluten", "soy"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "burger-9",
+          "name": "Burger No 9",
+          "description": "Prawn cocktail & lettuce",
+          "price": 7.95,
+          "allergens": ["gluten", "shellfish", "eggs"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "burger-disney",
+          "name": "Disney Burger",
+          "description": "Bacon, cheese & onion",
+          "price": 7.95,
+          "allergens": ["gluten", "dairy"],
+          "dietary": [],
+          "inStock": true,
+          "popular": true
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "name": "🍗 Chicken",
+      "description": "Fresh marinated & flame-grilled chicken",
+      "items": [
+        {
+          "id": "chicken-1",
+          "name": "Chicken No 1",
+          "description": "Lettuce & mayonnaise",
+          "price": 6.50,
+          "allergens": ["gluten", "eggs"],
+          "dietary": [],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "chicken-5",
+          "name": "Chicken No 5",
+          "description": "Bacon, cheese & lettuce",
+          "price": 6.95,
+          "allergens": ["gluten", "dairy"],
+          "dietary": [],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "chicken-wings-bucket",
+          "name": "Chicken Wings Bucket",
+          "description": "Fresh peri peri wings. Pick your heat level!",
+          "price": 8.99,
+          "allergens": [],
+          "dietary": ["gluten-free"],
+          "inStock": true,
+          "popular": true,
+          "sizes": ["small", "medium", "large"]
+        },
+        {
+          "id": "chicken-strips",
+          "name": "Chicken Strips",
+          "description": "Crispy fried chicken strips",
+          "price": 5.95,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false,
+          "sizes": ["3pcs", "5pcs", "8pcs"]
+        },
+        {
+          "id": "chicken-nuggets",
+          "name": "Chicken Nuggets",
+          "description": "Golden crispy nuggets",
+          "price": 4.95,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": false,
+          "sizes": ["8pcs"]
+        }
+      ]
+    },
+    {
+      "id": "ribs",
+      "name": "🍖 Ribs",
+      "description": "Tender flame-grilled ribs",
+      "items": [
+        {
+          "id": "ribs-small",
+          "name": "Ribs - Small",
+          "description": "Half rack of tender ribs",
+          "price": 7.95,
+          "allergens": [],
+          "dietary": ["gluten-free"],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "ribs-large",
+          "name": "Ribs - Large",
+          "description": "Full rack of tender ribs",
+          "price": 12.95,
+          "allergens": [],
+          "dietary": ["gluten-free"],
+          "inStock": true,
+          "popular": true
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "name": "🍟 Sides",
+      "description": "Delicious sides to complete your meal",
+      "items": [
+        {
+          "id": "fries-regular",
+          "name": "Regular Fries",
+          "description": "Crispy golden fries",
+          "price": 2.99,
+          "allergens": [],
+          "dietary": ["vegan", "gluten-free"],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "fries-large",
+          "name": "Large Fries",
+          "description": "Extra large portion of fries",
+          "price": 3.99,
+          "allergens": [],
+          "dietary": ["vegan", "gluten-free"],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "cheesy-fries",
+          "name": "Cheesy Fries",
+          "description": "Fries topped with melted cheddar",
+          "price": 4.49,
+          "allergens": ["dairy"],
+          "dietary": ["vegetarian"],
+          "inStock": true,
+          "popular": true
+        },
+        {
+          "id": "coleslaw",
+          "name": "Coleslaw",
+          "description": "Fresh creamy coleslaw",
+          "price": 1.99,
+          "allergens": ["eggs", "dairy"],
+          "dietary": ["vegetarian"],
+          "inStock": true,
+          "popular": false
+        },
+        {
+          "id": "onion-rings",
+          "name": "Onion Rings",
+          "description": "Crispy battered onion rings",
+          "price": 3.49,
+          "allergens": ["gluten"],
+          "dietary": ["vegan"],
+          "inStock": true,
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "🥤 Drinks",
+      "description": "Refreshing beverages",
+      "items": [
+        {
+          "id": "cola-330ml",
+          "name": "Cola",
+          "description": "Ice-cold cola",
+          "price": 1.50,
+          "allergens": [],
+          "dietary": ["vegan", "gluten-free"],
+          "inStock": true,
+          "popular": true,
+          "sizes": ["330ml", "1.5L"]
+        },
+        {
+          "id": "sprite-330ml",
+          "name": "Sprite",
+          "description": "Refreshing lemonade",
+          "price": 1.50,
+          "allergens": [],
+          "dietary": ["vegan", "gluten-free"],
+          "inStock": true,
+          "popular": false,
+          "sizes": ["330ml", "1.5L"]
+        },
+        {
+          "id": "orange-330ml",
+          "name": "Orange",
+          "description": "Fresh orange drink",
+          "price": 1.50,
+          "allergens": [],
+          "dietary": ["vegan", "gluten-free"],
+          "inStock": true,
+          "popular": false,
+          "sizes": ["330ml", "1.5L"]
+        },
+        {
+          "id": "water-500ml",
+          "name": "Water",
+          "description": "Bottled mineral water",
+          "price": 1.00,
+          "allergens": [],
+          "dietary": ["vegan", "gluten-free"],
+          "inStock": true,
+          "popular": false,
+          "sizes": ["500ml"]
+        }
+      ]
+    },
+    {
+      "id": "combos",
+      "name": "🎉 Combos & Meal Deals",
+      "description": "Great value combo meals",
+      "items": [
+        {
+          "id": "combo-burger-meal",
+          "name": "Burger Meal Deal",
+          "description": "Any burger + fries + drink",
+          "price": 9.99,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": true,
+          "includesItems": ["burger-choice", "fries-choice", "drink-choice"]
+        },
+        {
+          "id": "combo-chicken-meal",
+          "name": "Chicken Meal Deal",
+          "description": "Any chicken burger + fries + drink",
+          "price": 9.99,
+          "allergens": ["gluten"],
+          "dietary": [],
+          "inStock": true,
+          "popular": true,
+          "includesItems": ["chicken-choice", "fries-choice", "drink-choice"]
+        }
+      ]
+    }
+  ],
+  "allergens": [
+    { "id": "gluten", "name": "Gluten", "icon": "🌾" },
+    { "id": "dairy", "name": "Dairy", "icon": "🥛" },
+    { "id": "nuts", "name": "Nuts", "icon": "🥜" },
+    { "id": "soy", "name": "Soy", "icon": "🫘" },
+    { "id": "shellfish", "name": "Shellfish", "icon": "🦐" },
+    { "id": "eggs", "name": "Eggs", "icon": "🥚" }
+  ],
+  "upsells": [
+    { "itemId": "burger-cluffie", "upsellId": "fries-regular", "message": "Add fries for just £2.99?" },
+    { "itemId": "burger-cheese", "upsellId": "cheesy-fries", "message": "Upgrade to cheesy fries?" },
+    { "itemId": "chicken-5", "upsellId": "coleslaw", "message": "Add coleslaw for freshness?" },
+    { "itemId": "ribs-large", "upsellId": "fries-large", "message": "Large fries to go with those ribs?" }
+  ],
+  "settings": {
+    "minOrderValue": 0,
+    "deliveryFee": 2.50,
+    "taxRate": 0.20,
+    "currency": "GBP",
+    "currencySymbol": "£",
+    "acceptingOrders": true,
+    "estimatedWaitTime": "20-30 minutes"
+  }
+}

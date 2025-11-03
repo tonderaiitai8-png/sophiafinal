@@ -1,0 +1,4 @@
+#!/bin/bash
+cd backend
+export OPENAI_API_KEY="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"
+node dist/server.js
